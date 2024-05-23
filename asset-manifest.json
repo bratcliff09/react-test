@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/react-test/static/css/main.118dc1f8.css",
+    "main.js": "/react-test/static/js/main.9da44237.js",
+    "static/media/okami.avif": "/react-test/static/media/okami.73d7f2f64f6264c4a8cd.avif",
+    "static/media/sf6.avif": "/react-test/static/media/sf6.f408c129c3e8bff36386.avif",
+    "static/media/sf6_deluxe.avif": "/react-test/static/media/sf6_deluxe.f85a33393a43b1c39a3f.avif",
+    "static/media/sf6_ultimate.avif": "/react-test/static/media/sf6_ultimate.c199a684cd208c5ac0a2.avif",
+    "static/media/network.avif": "/react-test/static/media/network.a7a4991494162d35d926.avif",
+    "static/media/village.avif": "/react-test/static/media/village.cafd36248599e991b267.avif",
+    "static/media/ace.avif": "/react-test/static/media/ace.0857e6db513198714bda.avif",
+    "static/media/mvc_deluxe.avif": "/react-test/static/media/mvc_deluxe.f916555ab16c7292a3db.avif",
+    "static/media/re4_gold.avif": "/react-test/static/media/re4_gold.915cee1af5ef7ba3e66b.avif",
+    "static/media/ghost.avif": "/react-test/static/media/ghost.0c420f85d706bbd0e9bc.avif",
+    "index.html": "/react-test/index.html",
+    "main.118dc1f8.css.map": "/react-test/static/css/main.118dc1f8.css.map",
+    "main.9da44237.js.map": "/react-test/static/js/main.9da44237.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.118dc1f8.css",
+    "static/js/main.9da44237.js"
+  ]
+}
