@@ -1,0 +1,174 @@
+* {
+  --img_width: 616px;
+  --img_height: 353px;
+  --img_factor: 0.6;
+  --final_width: calc(var(--img_width) * var(--img_factor));
+  --final_height: calc(var(--img_height) * var(--img_factor));
+  --discount_text: #eff7d4;
+  --discount_border: #6eb257;
+}
+
+.gogo {
+  background-color: var(--colorD);
+}
+
+.filter-options {
+  /*top left bottom right*/
+  margin: 10px 52px 35px;
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+}
+
+.fil-opt-a {
+  display: flex;
+  flex-direction: row;
+}
+
+.fil-opt-a p {
+  color: var(--colorB);
+  font-size: 1.4rem;
+  font-weight: 700;
+  transition: all 0.3s ease;
+}
+
+.fil-opt-b {
+  cursor: pointer;
+  padding: 0 3px;
+}
+
+.fil-opt-b:hover {
+  background-color: #bec3d6;
+}
+
+.fil-opt-c {
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  z-index: 2;
+  top: 93px;
+  margin-left: -3px;
+}
+
+.fil-opt-c.open {
+  display: flex;
+}
+
+.fil-opt-c button {
+  text-align: left;
+  height: 40px;
+  cursor: pointer;
+  font-size: 1rem;
+  border-radius: 0;
+  border: 0.1rem solid;
+  color: var(--colorB);
+  background: #bec3d6;
+  border-color: #bec3d6;
+  transition: all 0.3s ease;
+}
+
+.fil-opt-c button:hover {
+  background-color: #9da2b8;
+  border-color: #9da2b8;
+}
+
+/*-----------------------------*/
+
+.games {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 20px;
+  margin: 0 52px;
+}
+
+.gameCard {
+  display: flex;
+  flex-direction: column;
+  /*
+  border: 0.1rem solid ;
+  */
+  width: fit-content;
+  background: var(--colorE);
+  filter: drop-shadow(0px 0px 4px rgba(16, 23, 36, 0.886));
+  /*
+  box-shadow: 0px 0px 9px 1px rgba(42, 52, 72, 0.74);
+  */
+}
+
+.gameCard img {
+  width: var(--final_width);
+  height: var(--final_height);
+}
+
+.gameCard .title {
+  font-weight: 700;
+  font-size: 1.25rem;
+  overflow: hidden;
+  height: 60px;
+  max-height: 60px;
+  margin: 5px 0px 10px 10px;
+  max-width: calc(var(--final_width) - 20px);
+}
+
+.price_discount {
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  gap: 11px;
+  margin-bottom: 5px;
+  height: 30px;
+}
+
+.price_discount .price {
+  margin-right: 10px;
+  font-weight: 700;
+  font-size: 1.25rem;
+  align-self: center;
+}
+
+.price_discount .discount {
+  font-weight: 700;
+  font-size: 1.09rem;
+  width: 50px;
+  text-align: center;
+  border: 2px solid var(--discount_border);
+  background-color: var(--discount_border);
+  border-radius: 6px;
+  color: var(--discount_text);
+  padding-top: 2.5px;
+}
+
+/*--------------------*/
+.page-numbers {
+  margin: 20px 0 30px 52px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.page-numbers .curr-page-btn,
+.page-numbers .other-page-btn {
+  cursor: pointer;
+  --square: 40px;
+  height: var(--square);
+  width: var(--square);
+  font-weight: 500;
+  font-size: 1.3rem;
+  color: #fff;
+  background: var(--colorB);
+  border: 2px solid var(--colorB);
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+.page-numbers .other-page-btn:hover {
+  background: #6A6E78
+}
+
+.page-numbers .curr-page-btn {
+  cursor: default;
+  color: #fff;
+  background: #20A5F8;
+  border-color: #20A5F8
+}
